@@ -1,16 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
-*
+*,
+*::before,
+*::after
 {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
-}
-
-body
-{
-    font-family: 'Outfit';
-    background-color: var(--Slate-300);
 }
 
 :root
@@ -21,49 +15,49 @@ body
     --Slate-900: hsl(218, 44%, 22%)
 }
 
+body
+{
+    padding: 16px;
+    font-family: 'Outfit', system-ui, serif;
+    background-color: var(--Slate-300);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100svh;
+}
+
+
 .qr-component
 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 320px;
-    height: 499px;
+    max-width: 20rem;
+    height: 30rem;
     background-color: var(--White);
     border-radius: 10px;
-    padding: 10px;
+    padding: 16px;
 }
 
 img
 {
     display: block;
-    width: 288px;
-    height: 288px;
-    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
     border-radius: 10px;
-}
-
-.text
-{
-    width: 288px;
-    margin: 25px auto;
 }
 
 p
 {
     color: var(--Slate-500);
-    font-weight: 400;
-    font-size: 15px;
-    letter-spacing: 0.2px;
+    font-size: 1rem;
+    letter-spacing: 0.0125em;
     line-height: 140%;
-    text-align: center;
 }
 
-h1
+h2
 {
     font-weight: 700;
-    font-size: 22px;
+    font-size: 1.45rem;
     color: var(--Slate-900);
     line-height: 120%;
-    margin: 20px 10px 10px 25px;
 }
